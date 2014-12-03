@@ -31,28 +31,20 @@ Method 2
 
 If your game does not use native UI layouts, you will need to use this method to display a banner on your screen.
 
-1. You will need to import the MoreGamers class into any file that uses it.
-
+You will need to import the MoreGamers class into any file that uses it.
     
     import com.moregamers.MoreGamers;
-    
 
-2. In the onCreate function of your Primary activity, initialize MoreGamers, where XX is your game id
-
+In the onCreate function of your Primary activity, initialize MoreGamers, where XX is your game id
     
     MoreGamers.init(this, XX);
-    
 
 This must be at the END of your onCreate function.  It will create an AbsoluteLayout and stack it on top of your other Views.
 
-3. Display a banner 
-
+Display a banner 
     
     MoreGamers.banner(x, y, width, height);
-    
 
-4. Hide the banner
+Hide the banner
 
-    
     MoreGamers.hide();
-    
