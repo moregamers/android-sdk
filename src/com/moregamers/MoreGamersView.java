@@ -14,6 +14,6 @@ public class MoreGamersView extends WebView {
 		Display d = ((Activity)context).getWindowManager().getDefaultDisplay();
                 getSettings().setJavaScriptEnabled(true);
                 setLayoutParams(new LinearLayout.LayoutParams(-1, (int)(140 * (d.getWidth() / 525))));
-                loadUrl("http://app.moregamers.com/ad/frame?id=" + attrs.getAttributeValue(null, "game"));
+                loadUrl("http://app.moregamers.com/ad/frame?id=" + attrs.getAttributeValue(null, "game") + "&sdk=android");
 	}
 }
