@@ -45,7 +45,7 @@ public class MoreGamers {
 				if(_web == null) {
 					_web = new WebView(_context);
 					_web.getSettings().setJavaScriptEnabled(true);
-					_web.loadUrl("http://app.moregamers.com/ad/frame?id=" + _id + "&sdk=android");
+					_web.loadUrl("https://app.moregamers.com/ad/frame?id=" + _id + "&sdk=android");
 					_layout.addView(_web);
 				}
 
